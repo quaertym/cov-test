@@ -1,6 +1,6 @@
 module CovTest
 
-  export add, mul
+  export add, mul, pow
 
   function add(x,y)
     x + y

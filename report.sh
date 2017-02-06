@@ -1,5 +1,4 @@
 #!/bin/bash
 
 rm -rf src/*.cov
-cd ./test && julia --code-coverage=user --inline=no runtests.jl
-cd ../ && julia report-coverage.jl
+julia --code-coverage=user --inline=no ./test/runtests.jl && julia report-coverage.jl
